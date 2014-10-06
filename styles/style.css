@@ -1,0 +1,220 @@
+
+body {
+  background-color: #ffffff;
+  font-family: "Myriad Pro Semibold", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  margin:0px 0px; 
+  padding:0px;
+  text-align:center;
+}
+#wrapper {
+  padding-top: 0px;
+  transform: scale(0.5);
+}
+
+#content::before {
+   content: " ";
+   position: relative;
+   z-index: -1;
+  background-image: url("./../img/ios7.png");
+  /*background-size:  386.5px 879px;*/
+  background-repeat: no-repeat;
+  padding: 238px 0px 1400px 769px;
+  bottom: -0px;
+  left: -65px;
+}
+
+#content{
+  position: relative;
+  border-radius: 3px 3px 5px 5px;
+  margin:0px auto;
+  text-align:left;
+  background: linear-gradient(to bottom, #fffeff 0%,#dae0f6 100%); /* W3C */
+  width: 640px;
+  height: 1135px;
+  color: #4F5464;
+
+}
+
+
+.phase {
+  padding-top: 50px;
+  padding-left: 45px;
+}
+.phase h3 {
+  opacity: 0.7;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+
+.phase.evening {
+  position: absolute;
+  top: 800px;
+}
+
+.phase h2 {
+	font-family: "Myriad Pro Light", "Myriad Pro Semibold", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.2em;
+  font-weight: 200;
+  letter-spacing: -2px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.current-time {
+  color: #34AFDA;
+  background: -webkit-linear-gradient(#34AFDA, #34AFDA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0px;
+  font-size: 2em;
+  top: 40px;
+  font-weight: 600;
+  width: 100%;
+}
+.current-time .time {
+  padding-left: 40px;
+}
+
+.current-time .circle {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #34AFDA;
+  border-radius: 50%;
+  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+  position: inline-block;
+  float:right;
+  margin-top: 12px;
+  margin-left: 40px;
+}
+.current-time .line {
+  width: calc(100% - 200px);
+  float: right;
+  border-top: 2px solid #34AFDA;
+  margin-top: 18px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.time-dividers {
+  position: absolute;
+  right: 0;
+  top: -100px;
+  text-align: right;
+}
+
+.time-dividers b, 
+.time-dividers u, 
+.time-dividers i {
+  display: block;
+  width: 20px;
+  color: #34AFDA;
+  border-top: 1px solid #34AFDA;
+  height: 40px;
+  margin-left: auto;
+}
+.time-dividers b {
+  text-align: left;
+  line-height:0.1em; 
+  border-top: 2px solid #34AFDA;
+} 
+.time-dividers b em { 
+  /*width:200px; */
+  font-style: normal;
+  float: left;
+  left: -60px;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.time-dividers u {
+  width: 10px;
+}
+.time-dividers i {
+  width: 5px;
+}
+.phase .actions .action .circle {
+  /*
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  background: none;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  padding-top: 20px;
+  padding-left: 20px;
+  */
+
+}
+
+.phase .actions .action.second {
+  border: 4px solid #3F7FD2;
+}
+
+.phase .actions .action {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  border: 4px solid #34AFDA;
+  /*
+  background-image: -moz-linear-gradient(center bottom, #3F7FD2, #34AFDA);
+  border-image: linear-gradient(to top, #34AFDA,  #3F7FD2) 1 100%;*/
+  behavior: url(PIE.htc); 
+
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  opacity: 0.8;
+  cursor: default;
+  line-height: 2em;
+  color: #4F5464;
+  text-align: center;
+  cursor: default;
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+
+  /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)));
+  background-image: -moz-linear-gradient(center bottom, #34AFDA 33%,  #3F7FD2 67% );
+  padding: 2px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  */
+}
+
+.phase .actions .action:hover {
+  opacity: 1;
+}
+.phase .actions .action b {
+  text-decoration: none;
+  size: 2em;
+  font-size: 2em;
+  color: #4F5464;
+  padding-top: 80px;
+  display: block;
+  text-align: center;
+  cursor: default;
+}
+
+
+/* iPhone 5 in portrait & landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { /* STYLES GO HERE */}
